@@ -1,8 +1,9 @@
 /** CSS STYLE **/
 
-:color {
-   --whithe: #fff;
+:root {
+
    --transparent-white: #d7ccc0;
+   --whithe: #fff;
    --light: #f5f4f0;
    --main: #fe8a02;
    --main-dark: #42413c;
@@ -12,6 +13,15 @@
    --blue: #1085c5;
 }
 
+/*
+      --whithe: #fff;
+      --light: #f5f4f0;
+      --main: #fe8a02;
+      --main-dark: #42413c;
+      --dark: #2a2626;
+      --semi-transparent-dark: #908d8b;
+      --brown: #b09a81;
+      --blue: #1085c5;*/
 @font-face {
    font-family: "Open Sans", sans-serif;
    src: url("../styles/fonts/OpenSans-Regular.ttf");
@@ -32,21 +42,37 @@ main {
    font-family: "Open Sans";
 }
 
+/*ссылки*/
+a:focus,
+a:active {
+   outline: none;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
+   font-family: "Neucha";
+   font-weight: 400;
    line-height: 1.2em;
    margin: 0;
 }
 
 h1 {
-   font-family: "Neucha";
    font-size: 72px;
-   font-weight: 400;
 }
 
 h2 {
    font-size: 60px;
+
 }
 
 h3 {
@@ -54,6 +80,8 @@ h3 {
 }
 
 section {
+   position: relative;
+   box-sizing: border-box;
    padding: 100px 0;
 }
 
@@ -64,7 +92,7 @@ header {
    height: 100%;
    padding: 100px 0;
    margin: 0;
-   background-color: #F5F4F0;
+   background-color: var(--light);
 }
 
 header::before {
@@ -93,15 +121,14 @@ header::before {
 }
 
 .title {
-   color: #fe8a02;
+   color: var(--main);
    white-space: nowrap;
-   height: 400px;
 
    z-index: 10;
 }
 
 .title_accent {
-   color: #2a2626;
+   color: var(--dark);
 }
 
 .header-image {
@@ -130,16 +157,111 @@ header::before {
    box-sizing: border-box;
 
    text-transform: uppercase;
-   color: #ffffff;
+   color: var(--whithe);
    font-weight: 700;
    text-decoration: none;
    text-align: center;
 
    width: 148px;
    height: 49px;
-   background: #fe8a02;
+   background: var(--main);
 
    padding: 11px 0;
    margin-top: 51px;
    margin-left: 565px;
+}
+
+/*2 секция*/
+.container-video-block {
+   padding-bottom: 29px;
+   margin-bottom: -84px;
+}
+
+.video-block {
+   margin: 0 auto;
+   text-align: center;
+}
+
+.subheading {
+   margin: 30px 0 0 0;
+}
+
+.video {
+   display: block;
+   position: relative;
+   top: 30px;
+   left: 96px;
+   z-index: 10;
+
+   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+
+/*3 блок меню*/
+
+section.container-menu-block {
+   background-color: var(--dark);
+   padding-top: 200px;
+}
+
+.menu-block {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+   height: 691px;
+}
+
+.title-menu {
+   width: 350px;
+   min-height: 323px;
+   font-size: 52px;
+   line-height: 120%;
+
+   margin-bottom: 20px;
+}
+
+.title_accent-white {
+   color: var(--whithe);
+
+
+}
+
+a.menu-card {
+   display: block;
+   box-sizing: border-box;
+
+   width: 350px;
+   height: 323px;
+   background: #F5F4F0;
+
+   padding: 24px 24px 24px 24px;
+
+}
+
+a.ver {
+   height: 348px;
+}
+
+
+.menu-number {
+   font-family: 'Neucha';
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 1;
+   color: var(--dark);
+
+   margin: 0;
+}
+
+.menu-name {
+   color: var(--main);
+
+   margin-top: 40px;
+}
+
+.menu-text {
+   color: var(--dark);
+   margin: 16px 0 0 0;
 }
