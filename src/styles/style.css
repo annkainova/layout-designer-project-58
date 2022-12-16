@@ -40,6 +40,7 @@ main {
    font-size: 16px;
    line-height: 1.6em;
    font-family: "Open Sans";
+
 }
 
 /*ссылки*/
@@ -48,13 +49,21 @@ a:active {
    outline: none;
 }
 
-a,
 a:visited {
    text-decoration: none;
 }
 
 a:hover {
    text-decoration: none;
+}
+
+a {
+   color: var(--whithe);
+   cursor: pointer;
+}
+
+p {
+   margin: 0;
 }
 
 h1,
@@ -77,6 +86,7 @@ h2 {
 
 h3 {
    font-size: 34px;
+   margin-top: 30px;
 }
 
 section {
@@ -93,6 +103,7 @@ header {
    padding: 100px 0;
    margin: 0;
    background-color: var(--light);
+   z-index: 0;
 }
 
 header::before {
@@ -108,12 +119,17 @@ header::before {
    opacity: 10%;
 
    content: "";
+
+   z-index: -10;
 }
 
 .container {
-   width: 1100px;
+   max-width: 1100px;
    margin: 0 auto;
+   z-index: 100;
 }
+
+
 
 .header-title {
    display: flex;
@@ -121,14 +137,14 @@ header::before {
 }
 
 .title {
-   color: var(--main);
+   color: var(--dark);
    white-space: nowrap;
 
-   z-index: 10;
+   z-index: 50;
 }
 
 .title_accent {
-   color: var(--dark);
+   color: var(--main);
 }
 
 .header-image {
@@ -137,7 +153,7 @@ header::before {
    top: -55px;
    right: 270px;
 
-   z-index: 0;
+   z-index: 40;
 }
 
 .main-text {
@@ -149,10 +165,11 @@ header::before {
 }
 
 .column {
-   width: 535px;
+   max-width: 540px;
+   margin: 0;
 }
 
-.button {
+a.button {
    display: block;
    box-sizing: border-box;
 
@@ -169,7 +186,14 @@ header::before {
    padding: 11px 0;
    margin-top: 51px;
    margin-left: 565px;
+
+   cursor: pointer;
 }
+
+a.button:hover {
+   background-color: #EA7600;
+}
+
 
 /*2 секция*/
 .container-video-block {
@@ -222,14 +246,13 @@ section.container-menu-block {
    margin-bottom: 20px;
 }
 
-.title_accent-white {
+.title-white {
    color: var(--whithe);
-
-
 }
 
 a.menu-card {
    display: block;
+   position: relative;
    box-sizing: border-box;
 
    width: 350px;
@@ -238,6 +261,24 @@ a.menu-card {
 
    padding: 24px 24px 24px 24px;
 
+   text-decoration: none;
+}
+
+.menu-card:hover {
+   background-color: var(--main);
+}
+
+
+.menu-card:hover .menu-number {
+   color: var(--whithe);
+}
+
+.menu-card:hover .menu-name {
+   color: var(--whithe);
+}
+
+.menu-card:hover .menu-text {
+   color: var(--whithe);
 }
 
 a.ver {
@@ -264,4 +305,232 @@ a.ver {
 .menu-text {
    color: var(--dark);
    margin: 16px 0 0 0;
+}
+
+/*4 секция Эффект Икеи*/
+
+.description-light {
+   background-color: var(--light);
+   z-index: 0;
+}
+
+.description-light::before {
+   position: absolute;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   background-image: url("..//images/background.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 10%;
+
+   content: "";
+
+   z-index: -10;
+}
+
+.block-description {
+   display: flex;
+   justify-content: space-between;
+}
+
+.block-description-image {
+   filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+   margin-right: 30px;
+}
+
+.upheader {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+
+   margin: 0;
+
+   color: var(--semi-transparent-dark);
+}
+
+.subtitle {
+   color: var(--dark);
+}
+
+.title-description {
+   width: 100%;
+   height: 26px;
+   background-color: var(--brown);
+
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: var(--whithe);
+
+   margin-top: 100px;
+   margin-bottom: 20px;
+   padding: 5px 0 5px 10px;
+}
+
+.text-description {
+   display: flex;
+   justify-content: space-between;
+   flex: 2;
+}
+
+.text-description~p {
+   width: 540px;
+}
+
+/* 5 секция Преждевременная оптимизцаия */
+
+.description-dark {
+   background-color: var(--brown);
+   z-index: 0;
+}
+
+.description-dark::before {
+   position: absolute;
+   top: 0;
+
+   width: 100%;
+   height: 100%;
+
+   background-image: url("..//images/background.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   opacity: 10%;
+
+   content: "";
+
+   z-index: -10;
+}
+
+.upheader-light {
+   color: var(--transparent-white);
+}
+
+.subtitle-white {
+   color: var(--whithe);
+}
+
+.title-description-white {
+   width: 100%;
+   height: 26px;
+   background-color: var(--whithe);
+
+   font-weight: 700;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: var(--brown);
+
+   margin-top: 100px;
+   margin-bottom: 20px;
+   padding: 5px 0 5px 10px;
+}
+
+.column-white {
+   color: var(--whithe);
+}
+
+/* Футер */
+
+footer {
+   padding: 100px 0;
+}
+
+.footer-mail-form {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+   background-color: var(--dark);
+   height: 190px;
+}
+
+.title-mail-form {
+   font-weight: 400;
+   font-size: 18px;
+   color: var(--whithe);
+
+   margin: 0;
+   margin-bottom: 9px;
+}
+
+
+.title-form {
+   margin: 0;
+}
+
+.input-mail-form {
+   box-sizing: border-box;
+
+   width: 423px;
+   height: 50px;
+   border: 1px solid #E3E3E3;
+
+   padding: 17px 0 18px 15px;
+}
+
+.input-mail-form::placeholder {
+   font-family: 'Open Sans';
+   font-weight: 400;
+   font-size: 13.1px;
+   color: #757575;
+}
+
+
+.form {
+   display: flex;
+}
+
+
+.button-mail-form {
+   position: relative;
+
+   width: 70px;
+   height: 50px;
+   background: var(--main);
+   border: none;
+
+}
+
+.button-mail-form::before {
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+
+   width: 70px;
+   height: 50px;
+   background-image: url("../images/send.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+
+   cursor: pointer;
+}
+
+.button-mail-form:hover {
+   background-color: #EA7600;
+}
+
+
+.disclaimer-mail-form {
+   font-size: 12px;
+   color: var(--whithe);
+   margin: 0;
+}
+
+.footer-information {
+   text-align: center;
+   margin-top: 76px;
+}
+
+.footer-link {
+   color: #007DC1;
+
+}
+
+.footer-information-text {
+   margin-bottom: 16px;
 }
