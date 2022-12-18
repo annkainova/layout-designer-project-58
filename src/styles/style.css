@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "Neucha-Regular";
+  font-family: Neucha, sans-serif;
   src: url("../styles/fonts/Neucha-Regular.ttf");
 }
 
@@ -59,7 +59,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Neucha-Regular";
+  font-family: Neucha, sans-serif;
   font-weight: 400;
   line-height: 1.2em;
   margin: 0;
@@ -149,6 +149,10 @@ header::before {
   column-gap: 30px;
 }
 
+.text-description ~ p {
+  width: 540px;
+}
+
 .column p:last-child {
   margin: 0;
 }
@@ -232,9 +236,8 @@ section.container-menu-block {
   color: var(--whithe);
 }
 
-
 .menu-number {
-  font-family: "Neucha-Regular";
+  font-family: Neucha, sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 1;
@@ -251,7 +254,7 @@ section.container-menu-block {
 
 .menu-text {
   color: var(--dark);
-  margin: 14px 0 0 ;
+  margin: 14px 0 0;
 }
 
 a.menu-card {
@@ -322,12 +325,12 @@ a.ver {
 }
 
 .block-description-image {
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
   vertical-align: middle;
 }
 
 .upheader {
-  font-family: "Neucha-Regular";
+  font-family: Neucha, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -365,10 +368,6 @@ a.ver {
   flex: 2;
 }
 
-.text-description ~ p {
-  width: 540px;
-}
-
 /* 5 секция Преждевременная оптимизцаия */
 
 .description-dark {
@@ -386,7 +385,7 @@ a.ver {
   background-image: url("..//images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity:0.1;
+  opacity: 0.1;
 
   content: "";
 
