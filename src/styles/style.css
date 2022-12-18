@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: Neucha, sans-serif;
+  font-family: Neucha;
   src: url("../styles/fonts/Neucha-Regular.ttf");
 }
 
@@ -59,7 +59,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: Neucha, sans-serif;
+  font-family: Neucha;
   font-weight: 400;
   line-height: 1.2em;
   margin: 0;
@@ -237,7 +237,7 @@ section.container-menu-block {
 }
 
 .menu-number {
-  font-family: Neucha, sans-serif;
+  font-family: Neucha;
   font-weight: 400;
   font-size: 64px;
   line-height: 1;
@@ -330,7 +330,7 @@ a.ver {
 }
 
 .upheader {
-  font-family: Neucha, sans-serif;
+  font-family: Neucha;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
