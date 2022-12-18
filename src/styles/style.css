@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "Neucha";
+  font-family: Neucha;
   src: url("../styles/fonts/Neucha-Regular.ttf");
 }
 
@@ -30,10 +30,15 @@ body {
 main {
   font-size: 16px;
   line-height: 1.6em;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif; 
 }
 
-/*ссылки*/
+/* ссылки */
+a {
+  color: var(--whithe);
+  cursor: pointer;
+}
+
 a:focus,
 a:active {
   outline: none;
@@ -47,11 +52,6 @@ a:hover {
   text-decoration: none;
 }
 
-a {
-  color: var(--whithe);
-  cursor: pointer;
-}
-
 p {
   margin-top: 0;
 }
@@ -59,7 +59,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: "Neucha";
+  font-family: Neucha;
   font-weight: 400;
   line-height: 1.2em;
   margin: 0;
@@ -131,7 +131,7 @@ header::before {
   z-index: 50;
 }
 
-.title_accent {
+.title-accent {
   color: var(--main);
 }
 
@@ -178,7 +178,7 @@ a.button:hover {
   background-color: #ea7600;
 }
 
-/*2 секция*/
+/* 2 секция */
 .container-video-block {
   padding-bottom: 29px;
   margin-bottom: -84px;
@@ -190,7 +190,7 @@ a.button:hover {
 }
 
 .subheading {
-  margin: 30px 0 0 0;
+  margin: 30px 0 0 ;
 }
 
 .video {
@@ -203,7 +203,7 @@ a.button:hover {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
-/*3 блок меню*/
+/* 3 блок меню */
 
 section.container-menu-block {
   background-color: #42413c;
@@ -230,6 +230,28 @@ section.container-menu-block {
 
 .title-white {
   color: var(--whithe);
+}
+
+
+.menu-number {
+  font-family: Neucha;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--dark);
+
+  margin: 0;
+}
+
+.menu-name {
+  color: var(--main);
+
+  margin-top: 40px;
+}
+
+.menu-text {
+  color: var(--dark);
+  margin: 14px 0 0 ;
 }
 
 a.menu-card {
@@ -287,7 +309,7 @@ a.ver {
   margin: 14px 0 0 0;
 }
 
-/*4 секция Эффект Икеи*/
+/* 4 секция Эффект Икеи */
 
 .description-light {
   background-color: var(--light);
@@ -304,7 +326,7 @@ a.ver {
   background-image: url("..//images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 10%;
+  opacity: 0.1;
 
   content: "";
 
@@ -321,12 +343,12 @@ a.ver {
 }
 
 .block-description-image {
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 15%));
   vertical-align: middle;
 }
 
 .upheader {
-  font-family: "Neucha";
+  font-family: Neucha;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -461,7 +483,7 @@ footer {
 }
 
 .input-mail-form::placeholder {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 13.1px;
   line-height: 160%;
@@ -531,5 +553,5 @@ footer {
   font-size: 14px;
   line-height: 160%;
 
-  color: #000000;
+  color: #000;
 }
