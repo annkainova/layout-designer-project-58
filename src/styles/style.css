@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: Neucha;
+  font-family: Neucha, sans-serif;
   src: url("../styles/fonts/Neucha-Regular.ttf");
 }
 
@@ -30,7 +30,7 @@ body {
 main {
   font-size: 16px;
   line-height: 1.6em;
-  font-family: "Open Sans", sans-serif; 
+  font-family: "Open Sans", sans-serif;
 }
 
 /* ссылки */
@@ -59,7 +59,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: Neucha;
+  font-family: Neucha, sans-serif;
   font-weight: 400;
   line-height: 1.2em;
   margin: 0;
@@ -190,7 +190,7 @@ a.button:hover {
 }
 
 .subheading {
-  margin: 30px 0 0 ;
+  margin: 30px 0 0;
 }
 
 .video {
@@ -234,7 +234,7 @@ section.container-menu-block {
 
 
 .menu-number {
-  font-family: Neucha;
+  font-family: Neucha, sans-serif;
   font-weight: 400;
   font-size: 64px;
   line-height: 1;
@@ -286,27 +286,6 @@ a.menu-card {
 
 a.ver {
   height: 348px;
-}
-
-.menu-number {
-  font-family: "Neucha";
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 1;
-  color: var(--dark);
-
-  margin: 0;
-}
-
-.menu-name {
-  color: var(--main);
-
-  margin-top: 40px;
-}
-
-.menu-text {
-  color: var(--dark);
-  margin: 14px 0 0 0;
 }
 
 /* 4 секция Эффект Икеи */
@@ -407,7 +386,7 @@ a.ver {
   background-image: url("..//images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 10%;
+  opacity: 0.1;
 
   content: "";
 
